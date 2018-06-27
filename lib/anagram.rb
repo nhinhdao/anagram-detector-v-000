@@ -11,5 +11,4 @@ class Anagram
     def match(list)
         list.select {|word| word.split(//).sort == @anagram.to_s.split(//).sort}
     end
-
 end
