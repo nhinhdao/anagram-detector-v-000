@@ -4,9 +4,9 @@ class Anagram
 
     # ANAGRAM = ""
 
-    # def initialize(anagram)
-    #     @anagram = anagram
-    # end
+    def initialize(anagram)
+        @anagram = anagram
+    end
 
     def match(list)
         list.find {|word| word.split.sort == @anagram.split.sort}
