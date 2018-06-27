@@ -2,11 +2,9 @@
 class Anagram
     attr_accessor :anagram
 
-    # ANAGRAM = ""
-
-    # def initialize(anagram)
-    #     @anagram = anagram
-    # end
+    def initialize(anagram)
+        @anagram = anagram
+    end
 
     def match(list)
         list.select {|word| word.split(//).sort == @anagram.to_s.split(//).sort}
