@@ -2,5 +2,5 @@
 class Anagram
     attr_accessor :anagram
     ANAGRAM = ""
-    
+
 end
